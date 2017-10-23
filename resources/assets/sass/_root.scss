@@ -1,0 +1,103 @@
+@import "colors";
+
+:root {
+	/* Colors */
+
+	--background-primary: #EFF2F3;
+	--regular-white: white;
+
+	--slate: #404848;
+	--slate-dark: #202020;
+	--gray-normal: #A6A6A6;
+	--gray-medium-dark: #6D6D6D;
+	--xlight-gray-normal: #EFF2F3;
+	--light-gray-normal: #B5C3C7;
+
+	--fall-orange: #DB4925;
+
+	--ocean-blue: #1980C3;
+	--light-ocean-blue: #368cc4;
+
+	--dark-purple: #14141F;
+
+	--dark-green: #1C2E36;
+
+	// Widow layout
+	--layout-width: 1160px;
+
+	--header-height: 100px;
+	--footer-height: 195px;
+	--hero-height: 100vh - var(--header-height);
+
+	/* Font families */
+	--serif: 'Lora', serif;
+	--sans: 'Ubuntu', sans-serif;
+
+	/* Font weights */
+	--font-weight-light: 300;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-demi: 600;
+	--font-weight-bold: 700;
+
+	--font-size-xxxlarge: 5rem; 			// 80px
+	--font-size-xxlarge: 4rem; 				// 64px
+	--font-size-xlarge: 3rem;					// 48px
+	--font-size-large: 2.5rem;				// 40px
+	--font-size-xmedium-large: 2rem;	// 32px
+	--font-size-medium-large: 1.5rem;	// 24px
+	--font-size-medium: 1.25rem;			// 20px
+	--font-size-normal: 1rem;					// 16px
+	--font-size-small: 0.8125rem;			// 13px
+	--font-size-xsmall: 0.75rem;			// 12px
+
+	--h1: 5rem;
+	--h2: 3rem;
+	--h3: 2.5rem;
+	--h4: 1.5rem;
+	--h5: 1.25rem;
+	--h6: 1rem;
+
+	/* Gutters */
+	--gutter-xxxsmall: 5px;
+	--gutter-xsmall: 10px;
+	--gutter-small: 15px;
+	--gutter: 20px;
+	--gutter-medium: 30px;
+	--gutter-large: 40px;
+	--gutter-xlarge: 60px;
+	--gutter-xxlarge: 80px;
+	--gutter-xxxlarge: 100px;
+
+	/* Border radius */
+	--border-radius: 4px;
+	--border-radius-large: 8px;
+
+	/* Easing */
+	--ease-fast: 0.12s ease-in-out;
+	--ease: 0.2s ease-in-out;
+	--ease-slow: 0.32s ease-in-out;
+}
+
+// Breakpoints
+$xsmall: 320px;
+$small: 480px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+$xxlarge: 1320px;
+
+* {
+	font-smoothing: antialiased;
+}
+
+main {
+	min-height: 86vh;
+}
+
+body {
+	background: var(--white);
+	font-family: var(--sans);
+	margin: 0;
+	padding: 0;
+}

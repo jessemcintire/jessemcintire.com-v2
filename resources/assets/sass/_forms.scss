@@ -1,0 +1,62 @@
+// Forms
+
+.form-control {
+	background: white;
+	border: 0;
+	box-shadow: 0 0.5px 0 0 #D7DDDC;
+	color: #404040;
+	font-size: 1rem;
+	outline: none;
+	line-height: 2rem;
+	padding: 12px var(--gutter);
+	transition: all 0.12s ease-in-out;
+
+	&:focus {
+		&::placeholder {
+			color: #BBB;
+		}
+	}
+
+	&::placeholder {
+		color: #CCC;
+		transition: all 0.12s ease-in-out;
+	}
+}
+
+.form-groups {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include breakpoint($small) {
+    flex-direction: row;
+
+    .form-group {
+      &:first-child {
+        margin-right: var(--gutter-xsmall);
+      }
+
+      &:last-child {
+        margin-left: var(--gutter-xsmall);
+      }
+    }
+  }
+
+  .form-group {
+    flex: 1;
+  }
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: var(--gutter-small);
+  position: relative;
+
+  button {
+    margin: 0;
+  }
+}
+
+textarea.form-control {
+	min-height: 140px;
+}

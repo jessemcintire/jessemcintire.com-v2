@@ -1,0 +1,59 @@
+// Typography
+
+html,
+body {
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 1.75rem;
+	margin: 20px 0 30px;
+
+	@include breakpoint($medium) {
+		font-size: 3.125rem;
+	}
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: var(--font-weight-normal);
+	margin: 0 0 var(--gutter);
+
+	@include breakpoint($medium) {
+		font-size: 2rem;
+	}
+}
+
+h3 {
+	font-weight: var(--font-weight-demi);
+	font-size: 1.25rem;
+	margin: 0;
+
+	@include breakpoint($medium) {
+		font-size: 1.5rem
+	}
+}
+
+h4 {
+	font-size: 1.25rem;
+	font-weight: var(--font-weight-demi);
+}
+
+h6 {
+	font-size: var(--font-size-small);
+	margin: 0 0 var(--gutter-small);
+}
+
+p {
+	color: var(--dark-green);
+	font-size: 1rem;
+	font-weight: var(--font-weight-light);
+
+	a {
+		color: var(--new-blue);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--dark-green);
+}

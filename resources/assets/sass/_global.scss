@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box
+}
+
+.container {
+  padding: 0 var(--gutter);
+}
+
+body {
+  background: var(--background-primary);
+  padding-top: var(--header-height);
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
