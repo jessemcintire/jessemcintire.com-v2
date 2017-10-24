@@ -1,0 +1,57 @@
+.header {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: var(--header-height);
+  position: absolute;
+  top: 0;
+}
+
+.header__inner {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: none;
+    margin-right: var(--gutter-xlarge);
+
+    @include breakpoint($medium) {
+      display: flex;
+      justify-content: space-between;
+      min-width: 30%;
+    }
+
+    li {
+      &.active {
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: var(--regular-white);
+          margin-top: var(--gutter);
+          position: relative;
+        }
+
+        a {
+          font-weight: var(--font-weight-normal);
+        }
+      }
+    }
+
+    a {
+      color: var(--regular-white);
+      font-size: var(--font-size-normal);
+      font-weight: var(--font-weight-light);
+      padding: var(--gutter);
+    }
+  }
+}

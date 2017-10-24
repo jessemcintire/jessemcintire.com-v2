@@ -1,26 +1,35 @@
-@import "colors";
-
 :root {
 	/* Colors */
-
-	--background-primary: #EFF2F3;
 	--regular-white: white;
+	--off-white: #EFF2F3;
 
+	// Grays
 	--slate: #404848;
 	--slate-dark: #202020;
-	--gray-normal: #A6A6A6;
-	--gray-medium-dark: #6D6D6D;
 	--xlight-gray-normal: #EFF2F3;
 	--light-gray-normal: #B5C3C7;
+	--gray-normal: #D2D7DB;
+	--gray-medium-dark: #81898C;
+	--gray-medium-xdark: #505857;
 
-	--fall-orange: #DB4925;
+	// Blacks
+	--off-black: #192325;
 
-	--ocean-blue: #1980C3;
-	--light-ocean-blue: #368cc4;
+	// Greens
+	--pine-green: #3E594B;
+	--light-pine-green: #6F8378;
 
-	--dark-purple: #14141F;
+	// Blues
+	--light-blue: #9EC3D9;
+	--ocean-teal: #007C8F;
+	--light-ocean-teal: #7FBDC7;
+	--xlight-ocean-teal: #BFDEE3;
 
-	--dark-green: #1C2E36;
+	// Browns
+	--dark-brown: #8F614D;
+	--medium-brown: #BC7B56;
+	--light-brown: #D9B299;
+
 
 	// Widow layout
 	--layout-width: 1160px;
@@ -31,14 +40,14 @@
 
 	/* Font families */
 	--serif: 'Lora', serif;
-	--sans: 'Ubuntu', sans-serif;
+	--sans: 'Open Sans', sans-serif;
 
 	/* Font weights */
 	--font-weight-light: 300;
 	--font-weight-normal: 400;
-	--font-weight-medium: 500;
 	--font-weight-demi: 600;
 	--font-weight-bold: 700;
+	--font-weight-xbold: 800;
 
 	--font-size-xxxlarge: 5rem; 			// 80px
 	--font-size-xxlarge: 4rem; 				// 64px

@@ -7,8 +7,9 @@
 }
 
 body {
-  background: var(--background-primary);
+  background: var(--xlight-gray-normal);
   padding-top: var(--header-height);
+  font-family: var(--sans);
 }
 
 a {
