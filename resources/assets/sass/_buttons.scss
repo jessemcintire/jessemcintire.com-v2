@@ -12,13 +12,17 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: 0.12s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .button {
 	@include base-button;
 	color: var(--regular-white);
 	background: var(--new-blue);
-	border-radius: 30px;
+	border-radius: 60px;
+	padding: var(--gutter) var(--gutter-large);
 
 	a {
 		display: block;
@@ -26,16 +30,21 @@
 
 	&.button--small {
 		font-size: var(--font-size-small);
-		line-height: 42px;
 		min-width: 0;
 	}
 
 	&.button--primary {
-		background: var(--ocean-blue);
+		background: var(--ocean-teal);
 
 		&:hover,
 		&:focus {
-			background: var(--light-ocean-blue);
+			background: var(--light-ocean-teal);
+			color: var(--gray-medium-xdark);
+		}
+
+		&:active {
+			position: relative;
+			bottom: -2px;
 		}
 	}
 }
@@ -46,6 +55,7 @@
 	display: block;
   align-items: center;
 	min-width: 0;
+	transition: none;
 
 	img {
 		margin-left: var(--gutter-small);
@@ -85,6 +95,5 @@
 			position: relative;
 			bottom: -2px;
 		}
-
 	}
 }

@@ -1,0 +1,43 @@
+.contact-cta {
+  background: var(--xxlight-ocean-teal);
+  padding: calc(var(--gutter-xxlarge) * 2) var(--gutter-large);
+}
+
+.contact-cta__inner {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  a.button {
+    font-size: var(--font-size-large);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+.contact__heading {
+  text-align: center;
+
+  @include breakpoint($medium) {
+    text-align: left;
+  }
+
+  h2 {
+    color: var(--ocean-teal);
+    font-size: var(--font-size-xmedium-large);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 3px;
+  }
+
+  h3 {
+    color: var(--gray-medium-xxdark);
+    font-size: var(--font-size-medium-large);
+    font-weight: var(--font-weight-light);
+    letter-spacing: 4px;
+  }
+}

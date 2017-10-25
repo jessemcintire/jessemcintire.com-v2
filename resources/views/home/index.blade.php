@@ -7,4 +7,5 @@
   @include('home.my-expertise')
   @include('common.mark-quote')
   @include('home.my-work')
+  @include('home.contact-cta')
 @endsection
