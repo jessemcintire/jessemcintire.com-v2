@@ -1,19 +1,20 @@
 .my-expertise {
   background: var(--od-green);
-  min-height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--gutter-xxxlarge) 0;
 }
 
 .my-expertise__inner {
   max-width: var(--layout-width);
-  margin: var(--gutter-large) auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: var(--gutter-large) 0;
 }
 
 .my-expertise__heading {

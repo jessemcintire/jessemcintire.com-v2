@@ -7,50 +7,32 @@
         </h2>
         <ul class="footer__social-links">
           <li>
-            <a href="https://www.instagram.com/jaycardiello/" target="_blank">
-              <img src="/images/svg/instagram.svg" alt="Instagram"
-              width="20px"
-              height="20px"
+            <a href="https://www.linkedin.com/in/jessemcintire/" target="_blank">
+              <img src="{{ asset('images/svg/linked-in-white.svg') }}" alt="LinkedIn"
+              width="34px"
+              height="34px"
               >
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/JayCardiello/" target="_blank">
-              <img src="/images/svg/facebook.svg" alt="Facebook"
-              width="20px"
-              height="20px"
+            <a href="https://github.com/jessemcintire" target="_blank">
+              <img src="{{ asset('images/svg/github-white.svg') }}" alt="Facebook"
+              width="34px"
+              height="34px"
               >
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jaycardiello/" target="_blank">
-              <img src="/images/svg/linkedin.svg" alt="LinkedIn"
-              width="20px"
-              height="20px"
-              >
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/user/jaycardio" target="_blank">
-              <img src="/images/svg/youtube.svg" alt="YouTube"
-              width="40px"
-              height="20px"
-              >
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/JayCardiello" target="_blank">
-              <img src="/images/svg/twitter.svg" alt="Twitter"
-              width="20px"
-              height="20px"
+            <a href="https://codepen.io/jessemcintire/" target="_blank">
+              <img src="{{ asset('images/svg/codepen-white.svg') }}" alt="LinkedIn"
+              width="34px"
+              height="34px"
               >
             </a>
           </li>
         </ul>
       </div>
-
       @include('common.nav')
-
   </div>
   <span class="footer__fineprint">
     &copy; Jesse McIntire 2017
