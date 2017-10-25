@@ -4,7 +4,7 @@
 	cursor: pointer;
 	display: inline-block;
 	font-size: var(--font-size-medium);
-	font-weight: var(--font-weight-demi);
+	font-weight: var(--font-weight-bold);
 	letter-spacing: 1px;
 	padding: var(--gutter-small) var(--gutter-large);
 	outline: none;
@@ -21,7 +21,7 @@
 	@include base-button;
 	color: var(--regular-white);
 	background: var(--new-blue);
-	border-radius: 60px;
+	border-radius: 40px;
 	padding: var(--gutter) var(--gutter-large);
 
 	a {
@@ -35,11 +35,11 @@
 
 	&.button--primary {
 		background: var(--ocean-teal);
+		font-size: var(--font-size-xmedium-large);
 
 		&:hover,
 		&:focus {
 			background: var(--light-ocean-teal);
-			color: var(--gray-medium-xdark);
 		}
 
 		&:active {

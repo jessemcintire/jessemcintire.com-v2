@@ -8,6 +8,6 @@
         I'd love to bring your website idea to life!
       </h3>
     </div>
-    <a href="#" class="button button--primary">Hire me</a>
+    <a href="#" class="button button--primary">Hire Me</a>
   </div>
 </section>

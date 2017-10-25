@@ -8,4 +8,6 @@
   @include('common.mark-quote')
   @include('home.my-work')
   @include('home.contact-cta')
+  @include('common.picture-window')
+  @include('home.skills')
 @endsection
