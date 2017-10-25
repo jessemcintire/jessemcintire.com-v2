@@ -5,4 +5,5 @@
 @section('content')
   @include('home.hero')
   @include('home.my-expertise')
+  @include('common.mark-quote')
 @endsection

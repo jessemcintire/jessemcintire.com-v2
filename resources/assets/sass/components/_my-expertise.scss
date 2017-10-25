@@ -1,6 +1,6 @@
 .my-expertise {
   background: var(--od-green);
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -8,8 +8,8 @@
 }
 
 .my-expertise__inner {
-  width: var(--layout-width);
-  margin: 0 auto;
+  max-width: var(--layout-width);
+  margin: var(--gutter-large) auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,14 +31,14 @@
     font-size: var(--font-size-medium-large);
     font-weight: var(--font-weight-light);
     line-height: var(--font-size-xxlarge);
-    letter-spacing: 2.8px;
+    letter-spacing: 3.5px;
   }
 }
 
 .my-expertise__list {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  align-items: center;
   justify-content: center;
   margin-top: var(--gutter-xlarge);
 
@@ -53,6 +53,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--gutter-medium);
+    max-width: 80%;
 
     h4 {
       font-size: var(--font-size-medium-large);
