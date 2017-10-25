@@ -3,12 +3,14 @@
 	border: 0;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1rem;
-	line-height: 2.75rem;
-	min-width: 180px;
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-demi);
+	letter-spacing: 1px;
+	padding: var(--gutter-small) var(--gutter-large);
 	outline: none;
 	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
 	transition: 0.12s ease-in-out;
 }
 
@@ -56,5 +58,27 @@
 
 	&--invert {
 		color: var(--regular-white);
+	}
+}
+
+.button-outline {
+	@include base-button;
+	max-width: 180px;
+	border-radius: 15px;
+
+	&.button-outline--primary {
+		border: 5px solid var(--light-blue);
+
+		&:hover,
+		&:focus {
+			background: var(--light-blue);
+			color: rvar(--gray-medium-dark);
+		}
+
+		&:active {
+			position: relative;
+			bottom: -2px;
+		}
+
 	}
 }

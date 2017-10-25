@@ -16,6 +16,7 @@
 	--off-black: #192325;
 
 	// Greens
+	--od-green: #464E4D;
 	--pine-green: #3E594B;
 	--light-pine-green: #6F8378;
 
@@ -87,6 +88,9 @@
 	--ease: 0.2s ease-in-out;
 	--ease-slow: 0.32s ease-in-out;
 }
+
+// Sass Colors
+$od-green: #464E4D;
 
 // Breakpoints
 $xsmall: 320px;

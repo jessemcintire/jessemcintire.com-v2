@@ -4,4 +4,5 @@
 
 @section('content')
   @include('home.hero')
+  @include('home.my-expertise')
 @endsection

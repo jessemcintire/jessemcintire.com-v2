@@ -21,7 +21,6 @@
 
   .nav-list {
     display: none;
-    margin-right: var(--gutter-xlarge);
 
     @include breakpoint($medium) {
       display: flex;
@@ -54,4 +53,9 @@
       padding: var(--gutter);
     }
   }
+}
+
+.header-logo {
+  width: 60px;
+  height: auto;
 }
