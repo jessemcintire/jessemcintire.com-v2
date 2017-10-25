@@ -53,7 +53,13 @@
 	}
 
 	&--primary {
-		color: var(--fall-orange);
+		color: var(--ocean-teal);
+
+		&:hover,
+		&:focus {
+			color: var(--light-ocean-teal);
+			text-decoration: underline;
+		}
 	}
 
 	&--invert {

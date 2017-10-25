@@ -1,0 +1,113 @@
+.my-work {
+  background: var(--light-od-green);
+  color: var(--gray-medium-xxdark);
+  padding: var(--gutter-xxxlarge) 0;
+
+  @include breakpoint($medium) {
+    padding: var(--gutter-xxxlarge) var(--gutter-large);
+  }
+}
+
+.my-work__inner {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my-work__heading {
+  text-align: center;
+  margin-top: var(--gutter-xxxlarge);
+
+  h2 {
+    font-family: var(--serif);
+    font-size: var(--font-size-xxxlarge);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 6px;
+  }
+
+  h4 {
+    font-size: var(--font-size-medium-large);
+    font-weight: var(--font-weight-light);
+    line-height: var(--font-size-large);
+    letter-spacing: 7px;
+  }
+}
+
+.my-work__list {
+
+}
+
+.my-work__item {
+  border-bottom: 1px solid var(--medium-od-green);
+  display: flex;
+  flex-direction: column;
+  padding: var(--gutter-xxxlarge) 0;
+  margin: 0 var(--gutter-large);
+
+  &:last-child {
+    border: none;
+  }
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    padding: calc(var(--gutter-xxxlarge) * 2) 0;
+    margin: 0;
+  }
+}
+
+.item-pics {
+  position: relative;
+  flex: 2;
+  margin: 0;
+
+  .desktop-pic {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.64);
+  }
+
+  .mobile-pic {
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    width: 30%;
+    z-index: 1;
+  }
+}
+
+.item-content {
+  flex: 1;
+
+  h3 {
+    font-size: var(--font-size-xmedium-large);
+    font-weight: var(--font-weight-demi);
+  }
+
+  p {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-light);
+    line-height: var(--font-size-xmedium-large);
+    margin-bottom: 0;
+  }
+
+  a {
+    padding: var(--gutter-medium) 0;
+  }
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    background: var(--medium-od-green);
+    border-radius: 10px;
+    color: var(--regular-white);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-light);
+    padding: var(--gutter-xsmall) var(--gutter-medium);
+    margin: 0 var(--gutter-xsmall) var(--gutter-xsmall) 0;
+  }
+}
