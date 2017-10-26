@@ -1,4 +1,4 @@
-<section class="my-work">
+<section class="my-work" id="my-work">
   <div class="my-work__inner">
     <div class="my-work__heading">
       <h2>

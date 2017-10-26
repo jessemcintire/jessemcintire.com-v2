@@ -31,7 +31,7 @@
       color: var(--regular-white);
       font-size: var(--font-size-normal);
       font-weight: var(--font-weight-light);
-      margin: var(--gutter-small);
+      margin: var(--gutter-small) var(--gutter-small) var(--gutter);
     }
   }
 }

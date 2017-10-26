@@ -39,7 +39,7 @@
 	// Widow layout
 	--layout-width: 1160px;
 
-	--header-height: 100px;
+	--header-height: 80px;
 	--footer-height: 195px;
 	--hero-height: 100vh - var(--header-height);
 
@@ -96,6 +96,9 @@
 // Sass Colors
 $od-green: #464E4D;
 $regular-white: #FCFCFC;
+$gray-medium-xdark: #505857;
+$gray-medium-xxdark: #4A4A4A;
+$od-green: #464E4D;
 
 // Breakpoints
 $xsmall: 320px;

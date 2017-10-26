@@ -1,4 +1,4 @@
-<section class="contact-cta">
+<section class="contact-cta" id="contact">
   <div class="contact-cta__inner">
     <div class="contact__heading">
       <h2>

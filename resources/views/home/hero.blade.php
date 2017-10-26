@@ -16,7 +16,7 @@
         <h5>
           Learn more about what I do
         </h5>
-        <img src="{{ asset('images/svg/arrow-down-white.svg') }}" alt="">
+        <img src="{{ asset('images/svg/arrow-down-white.svg') }}" alt="" class="bounce">
       </a>
     </div>
   </div>

@@ -1,1 +1,3 @@
-console.log('app.js');
+import Header from './header'
+
+new Header()

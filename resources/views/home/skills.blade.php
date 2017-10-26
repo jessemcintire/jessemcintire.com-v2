@@ -1,4 +1,4 @@
-<section class="skills">
+<section class="skills" id="skills">
   <div class="skills__inner">
     <h2>
       Skills
@@ -52,6 +52,25 @@
           <img src="http://placehold.it/40x40" alt="">
         </li>
       </ul>
+    </div>
+    <div class="">
+      {!! Form::open(['url' => 'contact-submit', 'class' => 'contact__form']) !!}
+      <div class="form-group">
+        {{ Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name', 'required']) }}
+      </div>
+
+      <div class="form-group">
+        {{ Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email address', 'required']) }}
+      </div>
+
+      <div class="form-group">
+        {{ Form::textarea('message', '', ['class' => 'form-control', 'cols' => 'auto', 'rows' => 'auto', 'placeholder' => 'How can I help?', 'required']) }}
+      </div>
+
+      <div class="form-group">
+        {{ Form::submit('Submit', ['class' => 'button button--primary']) }}
+      </div>
+      {!! Form::close() !!}
     </div>
   </div>
 </section>
