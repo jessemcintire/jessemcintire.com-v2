@@ -10,5 +10,6 @@
   @include('home.contact-cta')
   @include('common.picture-window')
   @include('home.skills')
+  @include('common.alec-quote')
   @include('common.contact')
 @endsection

@@ -20,7 +20,7 @@
   --ocean-teal: #007C8F;
   --light-ocean-teal: #7FBDC7;
   --xlight-ocean-teal: #BFDEE3;
-  --xxlight-ocean-teal: #D9ECEE;
+  --xxlight-ocean-teal: #D3E9EC;
   --dark-brown: #8F614D;
   --medium-brown: #BC7B56;
   --light-brown: #D9B299;
@@ -835,6 +835,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--gutter-xxlarge) 0;
 }
 
+.quote-section--teal .quote-content h2:after {
+  background: var(--light-ocean-teal);
+}
+
+.quote-section--light-teal {
+  background: var(--xxlight-ocean-teal);
+  color: var(--gray-medium-xxdark);
+  padding: var(--gutter-xxlarge) 0;
+}
+
+.quote-section--light-teal .quote-content h2:after {
+  background: var(--ocean-teal);
+}
+
 .quote-section__inner {
   display: -webkit-box;
   display: flex;
@@ -882,18 +896,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.quote-content h2 {
-  font-size: var(--font-size-xmedium-large);
-  font-weight: var(--font-weight-demi);
-  line-height: var(--font-size-xlarge);
-}
-
 .quote-content h2:after {
   content: '';
   display: block;
   height: 2px;
   width: 30%;
-  background: var(--xxlight-ocean-teal);
   margin: var(--gutter) auto 0;
 }
 
@@ -903,9 +910,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.quote-content h3 {
-  font-size: var(--font-size-medium-large);
+.quote-content h2 {
+  font-size: var(--font-size-xmedium-large);
   font-weight: var(--font-weight-light);
+  line-height: var(--font-size-xlarge);
+  letter-spacing: 1px;
+}
+
+.quote-content h3 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-light);
+}
+
+.quote-content h3 a, .quote-content h3 a:visited {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .my-work {

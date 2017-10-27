@@ -58,40 +58,40 @@
       </div>
       <ul class="language-logos">
         <li>
-          <img src="{{ asset('images/tech-icons/sass.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/sass.svg') }}" alt="Sass">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/jquery.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/jquery.svg') }}" alt="jQuery">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/laravel.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/laravel.svg') }}" alt="Laravel">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/php.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/php.svg') }}" alt="PHP">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/css3.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/css3.svg') }}" alt="CSS3">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/github.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/github.svg') }}" alt="Github">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/html5.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/html5.svg') }}" alt="HTML5">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/sketch.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/sketch.svg') }}" alt="Sketch">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/es5.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/es5.svg') }}" alt="ES5">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/invision.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/invision.svg') }}" alt="InVision">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/react.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/react.svg') }}" alt="React">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/es6.svg') }}" alt="">
+          <img src="{{ asset('images/tech-icons/es6.svg') }}" alt="ES6">
         </li>
       </ul>
     </div>
