@@ -81,6 +81,7 @@ main {
 }
 
 body {
+  color: var(--regular-white);
   background: var(--#ffffff);
   font-family: var(--sans);
   margin: 0;
@@ -211,7 +212,7 @@ textarea.form-control {
 }
 
 .button.button--primary:hover, .button.button--primary:focus {
-  background: var(--light-ocean-teal);
+  background: #0598af;
 }
 
 .button.button--primary:active {
@@ -845,8 +846,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--gutter-xxlarge) 0;
 }
 
+.quote-section--light-teal .quote-content h2 {
+  color: var(--gray-medium-xxdark);
+}
+
 .quote-section--light-teal .quote-content h2:after {
   background: var(--ocean-teal);
+}
+
+.quote-section--light-teal .quote-content h3 {
+  color: var(--gray-medium-xxdark);
 }
 
 .quote-section__inner {
@@ -1128,7 +1137,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
   letter-spacing: 10px;
   line-height: 200px;
-  margin: 0;
+  margin-bottom: var(--gutter);
   text-transform: uppercase;
 }
 
@@ -1200,6 +1209,118 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.contact {
+  width: 100%;
+  background: linear-gradient(rgba(74, 74, 74, 0.3), rgba(74, 74, 74, 0.3)), url("/images/ivy-wall.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: var(--gutter-xxlarge) 0;
+}
+
+.contact__inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  max-width: var(--layout-width);
+  width: 100%;
+  padding: 0 var(--gutter-medium);
+}
+
+.contact__form-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contact__form-wrap {
+    margin-top: 0;
+    max-width: 50%;
+  }
+}
+
+.contact__form-wrap h2 {
+  color: var(--regular-white);
+  font-family: var(--serif);
+  font-size: var(--font-size-xlarge);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 4px;
+  margin: var(--gutter-xlarge) 0;
+}
+
+.contact__form-wrap .form-group {
+  width: 100%;
+}
+
+.contact__form-wrap .form-group:last-child {
+  margin: var(--gutter-medium) 0;
+}
+
+.contact__form-wrap .form-group .button {
+  margin: 0 auto;
+}
+
+.contact__form-wrap .contact__form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact__form-wrap .contact__form .row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contact__form-wrap .contact__form .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+}
+
+.contact__form-wrap .contact__form .row .form-group {
+  max-height: 50px;
+  margin: 0 0 var(--gutter) 0;
+}
+
+@media (min-width: 768px) {
+  .contact__form-wrap .contact__form .row .form-group:last-child {
+    margin-left: var(--gutter-medium);
+  }
+}
+
+.contact__form-wrap .contact__form .form-control {
+  width: 100%;
+}
+
 .picture-window {
   background: url("/images/jesse-computer.jpg") no-repeat bottom center fixed;
   background-size: cover;
@@ -1239,12 +1360,12 @@ li {
   list-style-type: none;
 }
 
-h1 span,
-h2 span,
-h3 span,
-h4 span,
-h5 span,
-p span {
+body h1 span,
+body h2 span,
+body h3 span,
+body h4 span,
+body h5 span,
+body p span {
   display: block;
 }
 

@@ -18,9 +18,15 @@
 
   .quote-content {
     h2 {
+      color: var(--gray-medium-xxdark);
+
       &:after {
         background: var(--ocean-teal);
       }
+    }
+
+    h3 {
+      color: var(--gray-medium-xxdark);
     }
   }
 }
