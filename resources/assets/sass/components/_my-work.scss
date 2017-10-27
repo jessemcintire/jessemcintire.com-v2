@@ -39,16 +39,20 @@
   border-bottom: 1px solid var(--medium-od-green);
   display: flex;
   flex-direction: column;
-  padding: var(--gutter-xxxlarge) 0;
+  padding: var(--gutter-xxlarge) 0;
   margin: 0 var(--gutter-large);
 
   &:last-child {
     border: none;
   }
 
+  &:first-child {
+    padding-top: var(--gutter-xxlarge);
+  }
+
   @include breakpoint($medium) {
     flex-direction: row;
-    padding: calc(var(--gutter-xxxlarge) * 2) 0;
+    padding: calc(var(--gutter-xxlarge) * 2) 0;
     margin: 0;
   }
 }

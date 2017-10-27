@@ -10,4 +10,5 @@
   @include('home.contact-cta')
   @include('common.picture-window')
   @include('home.skills')
+  @include('common.contact')
 @endsection

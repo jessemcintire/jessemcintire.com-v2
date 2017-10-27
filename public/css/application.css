@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   left: 0;
   z-index: 10;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s 0s ease-in-out;
 }
 
 .header__inner {
@@ -958,7 +958,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  padding: var(--gutter-xxxlarge) 0;
+  padding: var(--gutter-xxlarge) 0;
   margin: 0 var(--gutter-large);
 }
 
@@ -966,12 +966,16 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
+.my-work__item:first-child {
+  padding-top: var(--gutter-xxlarge);
+}
+
 @media (min-width: 768px) {
   .my-work__item {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-direction: row;
-    padding: calc(var(--gutter-xxxlarge) * 2) 0;
+    padding: calc(var(--gutter-xxlarge) * 2) 0;
     margin: 0;
   }
 }
@@ -1095,7 +1099,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills__inner {
-  width: var(--layout-width);
+  max-width: var(--layout-width);
   margin: 0 auto;
 }
 
@@ -1105,7 +1109,76 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
   letter-spacing: 10px;
   line-height: 200px;
+  margin: 0;
   text-transform: uppercase;
+}
+
+.skills__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.skills-lists {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.skills-lists .list-container {
+  margin-right: var(--gutter-large);
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+
+.skills-lists .list-container:last-child {
+  margin-right: 0;
+}
+
+.skills-lists .list-container h3 {
+  border-bottom: 1px solid var(--regular-white);
+  color: var(--light-brown);
+  font-size: var(--font-size-medium-large);
+  font-weight: var(--font-weight-normal);
+  padding-bottom: var(--gutter-xsmall);
+  margin-bottom: var(--gutter-xsmall);
+}
+
+.skills-lists ul {
+  margin-left: var(--gutter-large);
+}
+
+.skills-lists li {
+  list-style: unset;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-light);
+}
+
+.language-logos {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  align-self: flex-end;
+  flex-wrap: wrap-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.language-logos li {
+  margin: 0 var(--gutter-large) var(--gutter) 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 .picture-window {
