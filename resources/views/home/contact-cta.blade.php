@@ -1,4 +1,4 @@
-<section class="contact-cta" id="contact">
+<section class="contact-cta">
   <div class="contact-cta__inner">
     <div class="contact__heading">
       <h2>
@@ -8,6 +8,6 @@
         I'd love to bring your website idea to life!
       </h3>
     </div>
-    <a href="#" class="button button--primary">Hire Me</a>
+    <a href="#contact" class="contact-link button button--primary">Hire Me</a>
   </div>
 </section>

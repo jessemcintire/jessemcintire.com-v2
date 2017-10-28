@@ -1,4 +1,4 @@
-<section class="my-expertise">
+<section id="my-expertise" class="my-expertise">
   <div class="my-expertise__inner">
     <div class="my-expertise__heading">
       <h2>

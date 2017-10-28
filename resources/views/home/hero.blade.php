@@ -8,16 +8,16 @@
             I <strong>design</strong> and <strong>build</strong> beautiful web apps!
           </span>
         </h2>
-        <a href="#" class="button button-outline button-outline--primary">
+        <a href="#contact" class="contact-link button button-outline button-outline--primary">
           Hire me
         </a>
       </div>
-      <a href="#">
+      <div class="scroll-prompt">
         <h5>
-          Learn more about what I do
+          Scroll down to learn more about what I do
         </h5>
         <img src="{{ asset('images/svg/arrow-down-white.svg') }}" alt="" class="bounce">
-      </a>
+      </div>
     </div>
   </div>
 </section>

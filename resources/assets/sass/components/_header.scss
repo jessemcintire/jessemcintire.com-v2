@@ -4,17 +4,6 @@
   height: var(--header-height);
   position: absolute;
   top: 0;
-
-  @keyframes headerIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-100px)
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 
   &.header--stick {
@@ -24,7 +13,6 @@
     width: 100%;
     left: 0;
     z-index: 10;
-    // animation: headerIn 0.3s ease-in-out 0s forwards;
     transition: all 0.5s 0s ease-in-out ;
   }
 }
@@ -71,6 +59,7 @@
           height: 2px;
           background: var(--regular-white);
           margin: var(--gutter-xsmall) auto 0;
+          transition: all 1s ease-out;
         }
       }
     }

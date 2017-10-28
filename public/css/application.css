@@ -644,7 +644,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: var(--gutter-medium) var(--gutter-xlarge);
 }
 
-.hero__cta a {
+.hero__cta .scroll-prompt {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -654,7 +654,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.hero__cta a h5 {
+.hero__cta .scroll-prompt h5 {
   color: var(--regular-white);
   font-size: var(--font-size-normal);
   font-weight: var(--font-weight-light);
@@ -889,13 +889,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .quote-section__inner img {
-  max-width: 250px;
+  max-width: 200px;
   border-radius: 50%;
 }
 
 .quote-content {
   margin: var(--gutter-xlarge) 0;
-  padding: 0 var(--gutter-xxlarge);
+  padding: 0 var(--gutter-xlarge);
   text-align: center;
   display: -webkit-box;
   display: flex;
@@ -928,14 +928,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .quote-content h2 {
-  font-size: var(--font-size-xmedium-large);
+  font-size: var(--font-size-medium-large);
   font-weight: var(--font-weight-light);
-  line-height: var(--font-size-xlarge);
+  line-height: var(--font-size-large);
   letter-spacing: 1px;
 }
 
 .quote-content h3 {
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-regular);
   font-weight: var(--font-weight-light);
 }
 

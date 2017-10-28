@@ -21,7 +21,7 @@ class Header {
   }
 
   setupNavHandler() {
-    $('.nav a, .header-logo-link').on('click', (e) => {
+    $('.nav a, .header-logo-link, .contact-link, my-expertise-link').on('click', (e) => {
       let $this = $(e.currentTarget)
       let sel = $this.attr('href')
 
@@ -32,7 +32,12 @@ class Header {
 
       if ($this.attr('class') === 'header-logo-link') {
         $('.header nav li').removeClass('active');
-        $('.header nav li a[href="#"]').parent().addClass('active')
+        $('.header nav li a[href="#"]').parent().addClass('active');
+      }
+
+      if ($this.hasClass('contact-link')) {
+        $('.header nav li').removeClass('active');
+        $('.header nav li a[href="#contact"]').parent().addClass('active');
       }
 
       $('html, body').stop().animate({

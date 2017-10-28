@@ -45,14 +45,14 @@
   }
 
   img {
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 50%;
   }
 }
 
 .quote-content {
   margin: var(--gutter-xlarge) 0;
-  padding: 0 var(--gutter-xxlarge);
+  padding: 0 var(--gutter-xlarge);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -78,15 +78,14 @@
   }
 
   h2 {
-    font-size: var(--font-size-xmedium-large);
+    font-size: var(--font-size-medium-large);
     font-weight: var(--font-weight-light);
-    line-height: var(--font-size-xlarge);
+    line-height: var(--font-size-large);
     letter-spacing: 1px;
   }
 
-
   h3 {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-regular);
     font-weight: var(--font-weight-light);
 
     a {
