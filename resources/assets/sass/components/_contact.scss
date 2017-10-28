@@ -1,5 +1,6 @@
 .contact {
   width: 100%;
+  min-height: 100vh;
   background: linear-gradient(rgba(74, 74, 74, 0.3), rgba(74, 74, 74, 0.3)), url('/images/ivy-wall.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
@@ -37,7 +38,7 @@
     font-size: var(--font-size-xlarge);
     font-weight: var(--font-weight-normal);
     letter-spacing: 4px;
-    margin: var(--gutter-xlarge) 0;
+    margin: var(--gutter-large) 0;
   }
 
   .form-group {
@@ -73,7 +74,7 @@
 
         @include breakpoint($medium) {
           &:last-child {
-            margin-left: var(--gutter-medium);
+            margin-left: var(--gutter);
           }
         }
       }

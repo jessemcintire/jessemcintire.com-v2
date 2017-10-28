@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class ContactController extends Controller {
+
+    public function store(Request $request)
+    {
+      $firstname = $request->input('first-name');
+      $lastname = $request->input('last-name');
+      $company = $request->input('company');
+      $email = $request->input('email');
+      $subject = $request->input('subject');
+      $message = $request->input('message');
+
+      $name = $firstname . ' ' . $lastname;
+      $fullmessage = 'Name: ' . $name . "\r\n" .
+          'Company: ' . $company . "\r\n" .
+          'Subject: ' . $subject . "\r\n" .
+          'Email: ' . $email . "\r\n" .
+          'Message' . $message . "\r\n";
+
+      $data = compact('first-name', 'last-name', 'company', 'email', 'subject', 'message');
+
+      $to = 'jessemcintire2@gmail.com';
+      $headers = 'From: jessemcintire2@gmail.com' . "\r\n" .
+          'Reply-To: jessemcintire2@gmail.com' . "\r\n" .
+          'X-Mailer: PHP/' . phpversion();
+
+      mail($to, $email, $fullmessage, $headers);
+
+      return view('contact-thanks', ['name' => $name]);
+    }
+}

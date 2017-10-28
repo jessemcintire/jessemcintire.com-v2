@@ -434,6 +434,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 768px) {
+  .header__inner .nav {
+    display: -webkit-box;
+    display: flex;
+    min-width: 20%;
+  }
+}
+
 .header__inner .nav-list {
   display: none;
 }
@@ -442,10 +450,17 @@ h1, h2, h3, h4, h5, h6 {
   .header__inner .nav-list {
     display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    min-width: 30%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    width: 100%;
   }
+}
+
+.header__inner .nav-list li {
+  text-align: center;
+  padding: 0 var(--gutter-medium);
 }
 
 .header__inner .nav-list li.active:after {
@@ -454,19 +469,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 2px;
   background: var(--regular-white);
-  margin-top: var(--gutter-small);
-  position: relative;
-}
-
-.header__inner .nav-list li.active a {
-  font-weight: var(--font-weight-normal);
+  margin: var(--gutter-xsmall) auto 0;
 }
 
 .header__inner .nav-list a {
   color: var(--regular-white);
   font-size: var(--font-size-normal);
   font-weight: var(--font-weight-light);
-  padding: var(--gutter);
+  padding: var(--gutter) 0;
+  margin: 0 auto;
 }
 
 .header-logo {
@@ -660,8 +671,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-headline h2 {
-  -webkit-box-flex: 2;
-  flex: 2;
   font-size: var(--font-size-xmedium-large);
   font-weight: var(--font-weight-normal);
   line-height: var(--font-size-xxlarge);
@@ -675,8 +684,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-headline a {
-  -webkit-box-flex: 1;
-  flex: 1;
+  margin: 0 auto;
 }
 
 .bounce {
@@ -1211,6 +1219,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact {
   width: 100%;
+  min-height: 100vh;
   background: linear-gradient(rgba(74, 74, 74, 0.3), rgba(74, 74, 74, 0.3)), url("/images/ivy-wall.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1263,7 +1272,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size-xlarge);
   font-weight: var(--font-weight-normal);
   letter-spacing: 4px;
-  margin: var(--gutter-xlarge) 0;
+  margin: var(--gutter-large) 0;
 }
 
 .contact__form-wrap .form-group {
@@ -1313,7 +1322,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .contact__form-wrap .contact__form .row .form-group:last-child {
-    margin-left: var(--gutter-medium);
+    margin-left: var(--gutter);
   }
 }
 

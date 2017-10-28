@@ -9,11 +9,11 @@ class ContactController extends Controller {
 
     public function store(Request $request)
     {
-      $name = $request->input('name');
+      $firstname = $request->input('first-name');
       $email = $request->input('email');
       $body = $request->input('message');
 
-      $data = compact('name', 'email', 'body');
+      $data = compact('first-name', 'email', 'body');
 
       $to = 'jessemcintire2@gmail.com';
       $headers = 'From: jessemcintire2@gmail.com' . "\r\n" .
@@ -22,6 +22,6 @@ class ContactController extends Controller {
 
       mail($to, $email, $body, $headers);
 
-      return view('contact-thanks', ['name' => $name]);
+      return view('contact-thanks', ['firstname' => $firstname]);
     }
 }

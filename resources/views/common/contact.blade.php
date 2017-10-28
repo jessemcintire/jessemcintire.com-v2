@@ -4,7 +4,7 @@
       <h2>
         Get in Touch!
       </h2>
-      {!! Form::open(['url' => 'contact-submit', 'class' => 'contact__form container']) !!}
+      <!-- {!! Form::open(['url' => 'contact-submit', 'class' => 'contact__form container']) !!}
       <div class="row">
         <div class="form-group">
           {{ Form::text('first-name', '', ['class' => 'form-control', 'placeholder' => 'First Name', 'required']) }}
@@ -17,7 +17,7 @@
 
       <div class="row">
         <div class="form-group">
-          {{ Form::text('Company', '', ['class' => 'form-control', 'placeholder' => 'Company Name']) }}
+          {{ Form::text('company', '', ['class' => 'form-control', 'placeholder' => 'Company Name']) }}
         </div>
 
         <div class="form-group">
@@ -36,7 +36,9 @@
       <div class="form-group">
         {{ Form::submit('Submit', ['class' => 'button button--primary']) }}
       </div>
-      {!! Form::close() !!}
+      {!! Form::close() !!} -->
+
+      <a href="mailto:jessemcintire2@gmail.com" class="button button--primary">Email Me</a>
     </div>
   </div>
 </section>
