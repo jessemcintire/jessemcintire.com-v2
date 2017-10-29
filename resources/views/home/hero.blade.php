@@ -13,9 +13,9 @@
         </a>
       </div>
       <div class="scroll-prompt">
-        <h5>
+        <!-- <h5>
           Scroll down to learn more about what I do
-        </h5>
+        </h5> -->
         <img src="{{ asset('images/svg/arrow-down-white.svg') }}" alt="" class="bounce">
       </div>
     </div>
