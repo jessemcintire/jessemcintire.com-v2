@@ -3,10 +3,11 @@
 	border: 0;
 	cursor: pointer;
 	display: inline-block;
-	font-size: var(--font-size-medium);
+	font-size: var(--font-size-normal);
 	font-weight: var(--font-weight-bold);
 	letter-spacing: 1px;
-	padding: var(--gutter-small) var(--gutter-large);
+	min-width: 120px;
+	padding: var(--gutter-small) var(--gutter);
 	outline: none;
 	text-align: center;
 	text-decoration: none;
@@ -15,6 +16,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@include breakpoint($medium) {
+		min-width: 160px;
+		font-size: var(--font-size-medium);
+	}
 }
 
 .button {
@@ -35,7 +41,6 @@
 
 	&.button--primary {
 		background: var(--ocean-teal);
-		font-size: var(--font-size-xmedium-large);
 
 		&:hover,
 		&:focus {
@@ -58,18 +63,15 @@
 	transition: none;
 
 	img {
-		margin-left: var(--gutter-small);
+		margin-left: var(--gutter-xsmall);
 		vertical-align: middle;
+		width: 15px;
+		position: relative;
+		top: -2px;
 	}
 
 	&--primary {
 		color: var(--ocean-teal);
-
-		&:hover,
-		&:focus {
-			color: var(--light-ocean-teal);
-			text-decoration: underline;
-		}
 	}
 
 	&--invert {

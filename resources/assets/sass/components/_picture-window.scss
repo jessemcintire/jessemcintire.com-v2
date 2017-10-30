@@ -1,6 +1,11 @@
 .picture-window {
-  background: url('/images/jesse-computer.jpg') no-repeat bottom center fixed;
+  background: url('/images/jesse-computer.jpg') no-repeat fixed;
+  background-position: bottom right -200px;
   background-size: cover;
   height: 500px;
   overflow: hidden;
+
+  @include breakpoint($medium) {
+    background-position: bottom center;
+  }
 }

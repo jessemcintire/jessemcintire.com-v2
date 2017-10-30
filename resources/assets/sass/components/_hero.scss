@@ -20,7 +20,11 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: var(--gutter-medium) var(--gutter-xlarge);
+  margin: var(--gutter-medium);
+
+  @include breakpoint($medium) {
+    margin: var(--gutter-medium) var(--gutter-xlarge);
+  }
 
   .scroll-prompt {
     display: flex;
@@ -38,17 +42,33 @@
 
 .hero-headline {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  margin-bottom: var(--gutter-xxlarge);
+  margin-bottom: var(--gutter-xlarge);
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    margin-bottom: var(--gutter-xxlarge);
+  }
 
   h2 {
-    font-size: var(--font-size-xmedium-large);
+    font-size: var(--font-size-medium-large);
     font-weight: var(--font-weight-normal);
-    line-height: var(--font-size-xxlarge);
+    line-height: var(--font-size-xlarge);
     letter-spacing: 2px;
-    margin: 0;
     text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+    text-align: center;
+    margin-bottom: var(--gutter-large);
+
+    @include breakpoint($medium) {
+      margin: 0;
+      text-align: left;
+      font-size: var(--font-size-xmedium-large);
+      font-weight: var(--font-weight-normal);
+      line-height: var(--font-size-xxlarge);
+    }
 
     strong {
       font-weight: var(--font-weight-bold);

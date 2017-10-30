@@ -4,47 +4,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--gutter-xxxlarge) 0;
+
+  padding: var(--gutter-xxxlarge) 0 var(--gutter-large);
+
+  @include breakpoint($medium) {
+    padding: var(--gutter-xxlarge) 0;
+  }
 }
 
 .my-expertise__inner {
   max-width: var(--layout-width);
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--gutter-large) 0;
+  
+  padding: var(--gutter-large);
+
+  @include breakpoint($medium) {
+    margin: var(--gutter-medium) var(--gutter-xlarge);
+  }
 }
 
 .my-expertise__heading {
-
   h2 {
     font-family: var(--serif);
-    font-size: var(--font-size-xxlarge);
     font-weight: var(--font-weight-normal);
-    line-height: var(--font-size-xxlarge);
-    letter-spacing: 6px;
+    font-size: var(--font-size-xlarge);
+    line-height: var(--font-size-xlarge);
+    letter-spacing: 4px;
     margin-bottom: var(--gutter-xsmall);
+
+    @include breakpoint($medium) {
+      font-size: var(--font-size-xxlarge);
+      line-height: var(--font-size-xxlarge);
+      letter-spacing: 6px;
+    }
   }
 
   h3 {
-    font-size: var(--font-size-medium-large);
     font-weight: var(--font-weight-light);
-    line-height: var(--font-size-xxlarge);
-    letter-spacing: 3.5px;
+    font-size: var(--font-size-normal);
+    line-height: var(--font-size-xlarge);
+    letter-spacing: 2px;
+
+    @include breakpoint($medium) {
+      font-size: var(--font-size-medium-large);
+      line-height: var(--font-size-xxlarge);
+      letter-spacing: 3.5px;
+    }
   }
 }
 
 .my-expertise__list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   margin-top: var(--gutter-xlarge);
 
   @include breakpoint($medium) {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   li {
@@ -53,8 +74,12 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    padding: var(--gutter-medium);
+    padding: var(--gutter-medium) 0;
     max-width: 80%;
+
+    @include breakpoint($medium) {
+      padding: var(--gutter-medium);
+    }
 
     h4 {
       font-size: var(--font-size-medium-large);
