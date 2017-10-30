@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: var(--gutter-xxxlarge) 0 var(--gutter-large);
+  padding: var(--gutter-xxxlarge) var(--gutter) var(--gutter-large);
 
   @include breakpoint($medium) {
     padding: var(--gutter-xxlarge) 0;
@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   padding: var(--gutter-large);
 
   @include breakpoint($medium) {

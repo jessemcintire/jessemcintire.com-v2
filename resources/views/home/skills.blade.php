@@ -1,13 +1,11 @@
 <section class="skills" id="skills">
   <div class="skills__inner">
-    <h2>
-      Skills
-    </h2>
+    <img src="{{ asset('images/svg/skills-headline.svg') }}" alt="" class="skills-headline">
     <div class="skills__content">
       <div class="skills-lists">
         <div class="list-container">
           <h3>
-            Languages
+            Techs
           </h3>
           <ul class="languages-skills-list">
             <li>HTML</li>
@@ -35,7 +33,7 @@
         </div>
         <div class="list-container">
           <h3>
-            Data Visualization
+            Data Viz
           </h3>
           <ul class="languages-skills-list">
             <li>D3.js</li>
