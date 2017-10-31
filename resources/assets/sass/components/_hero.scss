@@ -54,13 +54,18 @@
   }
 
   h2 {
-    font-size: var(--font-size-medium-large);
+    font-size: var(--font-size-medium);
     font-weight: var(--font-weight-normal);
-    line-height: var(--font-size-xlarge);
+    line-height: var(--font-size-large);
     letter-spacing: 2px;
     text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
     text-align: center;
     margin-bottom: var(--gutter-large);
+
+    @include breakpoint($xsmall) {
+      font-size: var(--font-size-medium-large);
+      line-height: var(--font-size-xlarge);
+    }
 
     @include breakpoint($medium) {
       margin: 0;

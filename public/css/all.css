@@ -400,7 +400,6 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(70, 78, 77, 0.9);
   position: fixed;
   width: 100%;
-  left: 0;
   z-index: 10;
   transition: all 0.5s 0s ease-in-out;
 }
@@ -685,13 +684,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-headline h2 {
-  font-size: var(--font-size-medium-large);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-normal);
-  line-height: var(--font-size-xlarge);
+  line-height: var(--font-size-large);
   letter-spacing: 2px;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
   text-align: center;
   margin-bottom: var(--gutter-large);
+}
+
+@media (min-width: 321px) {
+  .hero-headline h2 {
+    font-size: var(--font-size-medium-large);
+    line-height: var(--font-size-xlarge);
+  }
 }
 
 @media (min-width: 768px) {
@@ -861,12 +867,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
   justify-content: center;
   padding: var(--gutter-medium) 0;
-  max-width: 80%;
 }
 
 @media (min-width: 768px) {
   .my-expertise__list li {
     padding: var(--gutter-medium);
+    width: 30%;
   }
 }
 

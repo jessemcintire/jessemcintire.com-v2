@@ -75,10 +75,10 @@
     align-items: center;
     justify-content: center;
     padding: var(--gutter-medium) 0;
-    max-width: 80%;
 
     @include breakpoint($medium) {
       padding: var(--gutter-medium);
+      width: 30%;
     }
 
     h4 {
