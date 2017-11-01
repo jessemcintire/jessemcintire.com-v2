@@ -1,6 +1,6 @@
 <section class="skills" id="skills">
   <div class="skills__inner">
-    <img src="{{ asset('images/svg/skills-headline.svg') }}" alt="" class="skills-headline">
+    <img src="{{ asset('images/skills-headline.png') }}" alt="" class="skills-headline">
     <div class="skills__content">
       <div class="skills-lists">
         <div class="list-container">

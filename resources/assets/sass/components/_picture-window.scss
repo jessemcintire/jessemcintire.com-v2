@@ -1,11 +1,13 @@
 .picture-window {
-  background: url('/images/jesse-computer.jpg') no-repeat fixed;
-  background-position: bottom right -200px;
+  background: url('/images/jesse-computer.jpg') no-repeat;
+  background-position: bottom right -150px;
   background-size: cover;
   height: 500px;
   overflow: hidden;
+  background-attachment: scroll;
 
   @include breakpoint($medium) {
     background-position: bottom center;
+    background-attachment: fixed;
   }
 }

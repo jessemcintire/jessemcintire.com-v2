@@ -21,10 +21,9 @@ class Header {
   }
 
   setupNavHandler() {
-    $('.nav a, .header-logo-link, .contact-link, my-expertise-link').on('click', (e) => {
+    $('.header-nav a, .footer-nav a, .header-logo-link, .contact-link, my-expertise-link').on('click', (e) => {
       let $this = $(e.currentTarget)
       let sel = $this.attr('href')
-
       let offset = (sel === '#') ? 0 : $(sel).offset().top
 
       $this.parent().siblings().removeClass('active');
@@ -40,9 +39,12 @@ class Header {
         $('.header nav li a[href="#contact"]').parent().addClass('active');
       }
 
-      $('html, body').stop().animate({
-        scrollTop: offset
-      }, 800);
+      if($this.parents().hasClass('footer-nav')) {
+      } else {
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 800);
+      }
     })
   }
 }
