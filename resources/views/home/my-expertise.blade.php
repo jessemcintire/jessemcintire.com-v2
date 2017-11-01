@@ -1,13 +1,13 @@
 <section id="my-expertise" class="my-expertise">
   <div class="my-expertise__inner">
-    <div class="my-expertise__heading">
+    <header>
       <h2>
         My Expertise
       </h2>
-      <h3>
+      <h4>
         I'm passionate about coding and creating intuitive apps
-      </h3>
-    </div>
+      </h4>
+    </header>
     <ul class="my-expertise__list">
       <li>
         <div class="image-box">

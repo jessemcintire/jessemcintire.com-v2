@@ -77,9 +77,10 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  padding: var(--gutter-xxxsmall);
 
   li {
-    margin: 0 var(--gutter-large) var(--gutter) 0;
+    margin: var(--gutter-xsmall);
     display: flex;
     align-items: center;
     justify-content: center;

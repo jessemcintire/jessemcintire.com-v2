@@ -1,29 +1,32 @@
 <section class="my-work" id="my-work">
   <div class="my-work__inner">
-    <div class="my-work__heading">
+    <header class="my-work__header">
       <h2>
         My Work
       </h2>
       <h4>
         Check out a few examples of my work below
       </h4>
-    </div>
+    </header>
     <ul class="my-work__list">
       <li class="my-work__item">
         <div class="item-content">
           <div class="item-description">
             <h3>
-              Example Company
+              Jay Cardiello
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Jay Cardiello is one of the most sought after and recognized fitness professionals in the world.
+            </p>
+            <p>
+              I worked to turn his design into a fully responsive website. Deliverables included the markup, styling, animations and sever-side structuring.
             </p>
           </div>
           <div class="item-info">
-            <a href="#" class="button-link button-link--primary">
+            <!-- <a href="#" class="button-link button-link--primary">
               Visit the website
               <img src="{{ asset('images/svg/thin-arrow-right-teal.svg') }}" alt="">
-            </a>
+            </a> -->
             <ul class="tech-tags">
               <li>
                 HTML

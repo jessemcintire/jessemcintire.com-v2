@@ -22,32 +22,12 @@
   }
 }
 
-.my-work__heading {
+.my-work__header {
   text-align: center;
   margin: var(--gutter) 0;
 
   @include breakpoint($medium) {
     margin-top: var(--gutter-large);
-  }
-
-  h2 {
-    font-family: var(--serif);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-xxlarge);
-    letter-spacing: 4px;
-    margin-bottom: var(--gutter-xsmall);
-
-    @include breakpoint($medium) {
-      font-size: var(--font-size-xxxlarge);
-      letter-spacing: 6px;
-    }
-  }
-
-  h4 {
-    font-size: var(--font-size-medium-large);
-    font-weight: var(--font-weight-light);
-    line-height: var(--font-size-large);
-    letter-spacing: 5px;
   }
 }
 
@@ -55,7 +35,7 @@
   border-top: 1px solid var(--medium-od-green);
   display: flex;
   flex-direction: column;
-  padding: var(--gutter-xxlarge) 0;
+  padding: var(--gutter-xlarge) 0;
   margin: 0;
 
   @include breakpoint($medium) {
@@ -64,7 +44,11 @@
   }
 
   &:first-child {
-    padding-top: var(--gutter-xxxlarge);
+    padding-top: var(--gutter-xlarge);
+
+    @include breakpoint($medium) {
+      padding-top: var(--gutter-xxlarge);
+    }
   }
 
 }
@@ -112,7 +96,7 @@
 
   a {
     min-width: 260px;
-    padding: 0 0 var(--gutter-medium);
+    padding: 0;
   }
 
 }
@@ -120,6 +104,7 @@
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
+  padding: var(--gutter-medium) 0 0;
 
   li {
     background: var(--medium-od-green);

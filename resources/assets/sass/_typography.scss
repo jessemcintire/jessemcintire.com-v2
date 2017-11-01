@@ -57,3 +57,31 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	color: var(--dark-green);
 }
+
+
+
+// From my work....
+h2 {
+	font-family: var(--serif);
+	font-weight: var(--font-weight-normal);
+	font-size: var(--font-size-xlarge);
+	letter-spacing: 4px;
+	margin-bottom: var(--gutter-xsmall);
+	text-align: center;
+
+	@include breakpoint($medium) {
+		font-size: var(--font-size-xxxlarge);
+		letter-spacing: 6px;
+	}
+}
+
+h4 {
+	font-size: var(--font-size-normal);
+	font-weight: var(--font-weight-light);
+	line-height: var(--font-size-xmedium-large);
+	letter-spacing: 5px;
+
+	@include breakpoint($medium) {
+		font-size: var(--font-size-medium-large);
+	}
+}

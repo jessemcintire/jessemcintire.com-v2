@@ -18,41 +18,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  padding: var(--gutter-large);
+  margin: 0 var(--gutter);
 
   @include breakpoint($medium) {
     margin: var(--gutter-medium) var(--gutter-xlarge);
-  }
-}
-
-.my-expertise__heading {
-  h2 {
-    font-family: var(--serif);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-xlarge);
-    line-height: var(--font-size-xlarge);
-    letter-spacing: 4px;
-    margin-bottom: var(--gutter-xsmall);
-
-    @include breakpoint($medium) {
-      font-size: var(--font-size-xxlarge);
-      line-height: var(--font-size-xxlarge);
-      letter-spacing: 6px;
-    }
-  }
-
-  h3 {
-    font-weight: var(--font-weight-light);
-    font-size: var(--font-size-normal);
-    line-height: var(--font-size-xlarge);
-    letter-spacing: 2px;
-
-    @include breakpoint($medium) {
-      font-size: var(--font-size-medium-large);
-      line-height: var(--font-size-xxlarge);
-      letter-spacing: 3.5px;
-    }
   }
 }
 
