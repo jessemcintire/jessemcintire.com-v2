@@ -29,7 +29,7 @@
     justify-content: space-between;
   }
 
-  .nav {
+  .header-nav, .footer-nav {
     @include breakpoint($medium) {
       display: flex;
       min-width: 20%;
@@ -55,7 +55,7 @@
           content: '';
           display: block;
           width: 100%;
-          height: 1px;
+          height: 2px;
           background: var(--regular-white);
           margin: var(--gutter-xsmall) auto 0;
         }

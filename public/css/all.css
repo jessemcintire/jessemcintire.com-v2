@@ -457,7 +457,7 @@ h4 {
 }
 
 @media (min-width: 768px) {
-  .header__inner .nav {
+  .header__inner .header-nav, .header__inner .footer-nav {
     display: -webkit-box;
     display: flex;
     min-width: 20%;
@@ -489,7 +489,7 @@ h4 {
   content: '';
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: var(--regular-white);
   margin: var(--gutter-xsmall) auto 0;
 }
@@ -1518,16 +1518,18 @@ h4 {
 }
 
 .picture-window {
-  background: url("/images/jesse-computer.jpg") no-repeat fixed;
-  background-position: bottom right -200px;
+  background: url("/images/jesse-computer.jpg") no-repeat;
+  background-position: bottom right -150px;
   background-size: cover;
   height: 500px;
   overflow: hidden;
+  background-attachment: scroll;
 }
 
 @media (min-width: 768px) {
   .picture-window {
     background-position: bottom center;
+    background-attachment: fixed;
   }
 }
 

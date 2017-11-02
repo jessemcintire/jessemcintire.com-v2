@@ -32,7 +32,9 @@
           </li>
         </ul>
       </div>
-      @include('common.nav')
+      <nav class="footer-nav">
+        @include('common.nav')
+      </nav>
   </div>
   <span class="footer__fineprint">
     &copy; Jesse McIntire 2017
