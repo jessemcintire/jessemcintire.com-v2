@@ -1,6 +1,7 @@
 <section class="hero home-hero">
   <div class="hero__inner">
     <div class="hero__cta">
+      <img src="{{ asset('images/jesse-dock.jpg')}}" alt="" class="hero-background-photo">
       <div class="hero-headline">
         <h2>
           Hi, I'm Jesse McIntire
