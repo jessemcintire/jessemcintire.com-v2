@@ -931,6 +931,16 @@ h4 {
   color: var(--gray-medium-xxdark);
 }
 
+.quote-section--gray {
+  background: var(--xlight-gray-normal);
+  color: var(--gray-medium-xxdark);
+  padding: var(--gutter-xxlarge) 0;
+}
+
+.quote-section--gray .quote-content h3:after {
+  background: var(--light-od-green);
+}
+
 .quote-section__inner {
   display: -webkit-box;
   display: flex;

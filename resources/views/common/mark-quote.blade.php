@@ -1,4 +1,4 @@
-<section class="quote-section quote-section--teal">
+<section class="quote-section quote-section--gray">
   <div class="quote-section__inner">
     <img src="{{ asset('images/mark-stenquist-headshot.jpg') }}" alt="Mark Stenquist">
     <div class="quote-content">
