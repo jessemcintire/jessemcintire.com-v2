@@ -77,7 +77,7 @@
           <img src="{{ asset('images/tech-icons/html5.svg') }}" alt="HTML5">
         </li>
         <li>
-          <img src="{{ asset('images/tech-icons/sketch.svg') }}" alt="Sketch">
+          <img src="{{ asset('images/tech-icons/sketch.png') }}" alt="Sketch">
         </li>
         <li>
           <img src="{{ asset('images/tech-icons/es5.svg') }}" alt="ES5">
