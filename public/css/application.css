@@ -274,6 +274,10 @@ textarea.form-control {
   color: var(--ocean-teal);
 }
 
+.button-link--primary:hover {
+  text-decoration: underline;
+}
+
 .button-link--invert {
   color: var(--regular-white);
 }
@@ -1096,7 +1100,7 @@ h4 {
 
 @media (min-width: 768px) {
   .my-work__item {
-    padding: calc(var(--gutter-xlarge) * 2) 0;
+    padding: calc(var(--gutter-large) * 2) 0;
     margin: 0 var(--gutter-xsmall) var(--gutter-xsmall) 0;
   }
 }
@@ -1166,7 +1170,7 @@ h4 {
 
 @media (min-width: 768px) {
   .item-info {
-    margin-left: var(--gutter-large);
+    margin: var(--gutter) 0 0 var(--gutter-large);
   }
 }
 
@@ -1199,9 +1203,7 @@ h4 {
   -webkit-box-direction: normal;
   flex-direction: column;
   position: relative;
-  -webkit-box-flex: 2;
-  flex: 2;
-  margin: 0;
+  margin: 0 0 var(--gutter-xxlarge);
 }
 
 @media (min-width: 768px) {
@@ -1219,8 +1221,8 @@ h4 {
 }
 
 .item-pics .mobile-pic {
-  margin: 0 auto;
-  width: 80%;
+  margin: var(--gutter-medium) auto 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -1228,9 +1230,9 @@ h4 {
   .item-pics .mobile-pic {
     margin: 0;
     position: absolute;
-    top: 25%;
-    right: 0;
-    width: 30%;
+    top: 20%;
+    right: 10px;
+    width: 28%;
   }
 }
 

@@ -72,6 +72,10 @@
 
 	&--primary {
 		color: var(--ocean-teal);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&--invert {
