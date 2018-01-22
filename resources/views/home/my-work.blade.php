@@ -76,7 +76,7 @@
               I provided them with development expertise to turn their design into fully responsive and scalable code. Pixel perfect markup and optimized media resources were primary concerns that I addressed.            </p>
           </div>
           <div class="item-info">
-            <a href="http://162.243.171.149/" class="button-link button-link--primary">
+            <a href="http://www.nextdroidsystems.com/" class="button-link button-link--primary">
               Visit Website
               <img src="{{ asset('images/svg/thin-arrow-right-teal.svg') }}" alt="">
             </a>
