@@ -6,7 +6,7 @@
         <h2>
           Hi, I'm Jesse McIntire
           <span>
-            I <strong>design</strong> and <strong>build</strong> beautiful web apps!
+            I <strong>design</strong> and <strong>build</strong> beautiful websites!
           </span>
         </h2>
         <a href="#contact" class="contact-link button button-outline button-outline--primary">
